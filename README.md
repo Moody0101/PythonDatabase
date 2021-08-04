@@ -6,6 +6,6 @@ Then install it, then execute this command
 $ npm install -g live server
 Also you would like to install python v3...
 Tech used : Css, js, python, html, live-server, json \n
-<b> usage:  </b>
+<div><b> usage:  </b></div>
 
 ---> run the main script (database.py) 
