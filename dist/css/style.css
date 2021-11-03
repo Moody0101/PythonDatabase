@@ -7,77 +7,35 @@ body {
     background: blue;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: 100vw;
     height: 100vh;
-}
-.passwords, .accounts {
-    color: black;
-    background: white;
-    border-radius: 12px;
-    width: 50vw;
-    padding: 10px;
-    margin: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border: 2px solid #191919;
-    font-family: sans-serif;
-
-}
-.passwords span:not(:first-child),
-.accounts span:not(:first-child) {
-    height: 30px;
-    padding: 10px;
-    width: 60%;
-    margin: 5px;
-    margin-top: 20px;
-    background: red;
     color: white;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    transition: all 1s ease-in-out;
-     cursor: pointer;
-    box-shadow: 10px 6px 20px .2px rgba(0, 0, 0, .3)
-}
-.passwords span:not(:first-child) {
-    animation: come-X 1s ease;
-}
-.accounts span:not(:first-child) {
-    animation: comeX 1s ease;
-}
-.passwords span:not(:first-child):hover,
-.accounts span:not(:first-child):hover {
+    font-family: "Myriad Pro", sans-serif;
     background: black;
 }
-
-.title {
-    margin-bottom: 10px;
-    padding: auto;
+body div{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    background: #080808;
+}
+section {
+    display:  flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    padding:  20px;
+}
+section span {
+    margin: 10px 0;
 }
 
-@keyframes come-X {
-    0% {
-        background: black;
-        color: white;
-        opacity: 0;
-        transform: translateX(200px);
-    }
-    100% {
-        opacity: 1;
-    }
+
+@media screen and (max-width: 700px) {
+    body div{
+    width: 80vw;
 }
-@keyframes comeX {
-    0% {
-        background: black;
-        color: white;
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    100% {
-        opacity: 1;
-    }
 }

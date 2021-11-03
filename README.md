@@ -1,11 +1,16 @@
-# PythonDatabase
-Before using this script, firstly you have to install the 
-Npm live server.
-First, download node.js
-Then install it, then execute this command
-$ npm install -g live server
-Also you would like to install python v3...
-Tech used : Css, js, python, html, live-server, json \n
-<div><b> usage:  </b></div>
+# Python database to store passwords
 
----> run the main script (database.py) 
+##description:
+ to manage the db you run the mainscript in the root dir and the html/css/js and server script are in the dist lib.
+
+## usage
+	
+	python3 mainscript.py
+	that makes a db, then asks for the desired operation to be performed on the db POST/CLEAR/GET
+to visualize the data that was added run:
+> python3 ./dist/server.py
+
+
+and that runs the html file that will manage to grab the data from the json file.
+
+:)

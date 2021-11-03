@@ -20,7 +20,7 @@ class dataBase:
     \"passwords\": []
 }
 """
-            )
+        )
         if len(self.account) > 2:
             if len(self.password) > 2:
                 data0 = loads(open(self.db, 'r').read()) #Loading the json object into python
